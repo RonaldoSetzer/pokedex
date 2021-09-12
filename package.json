@@ -12,6 +12,9 @@
     "styled-components": "^5.3.1",
     "web-vitals": "^1.0.1"
   },
+  "resolutions": {
+    "babel-loader": "8.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -21,15 +24,10 @@
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
+    "extends": ["react-app", "react-app/jest"],
     "overrides": [
       {
-        "files": [
-          "**/*.stories.*"
-        ],
+        "files": ["**/*.stories.*"],
         "rules": {
           "import/no-anonymous-default-export": "off"
         }
@@ -37,11 +35,7 @@
     ]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
