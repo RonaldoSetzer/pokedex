@@ -31,8 +31,23 @@ const GlobalStyles = createGlobalStyle`
   body {
     line-height: 1;
     font-family:  'Baloo 2', Helvetica, Arial, sans-serif;
-    color: '#ebdbb2';
-    background: '#282828';
+
+    --background: #282828;
+    --boundary: #3c3836;
+    --boundarysoft: #504945;
+    --selection: #7c6f64;
+    --gradient3: #bdae93;
+    --boundarylight: #a89984;
+
+    --foreground: #ebdbb2;
+    --primary: #83a598;
+    --secondary: #fabd2f;
+    --warning: #b8bb26;
+    --info: #8ec07c;
+    --danger: #fe8019;
+
+    color: var(--foreground);
+    background: var(--background);
   }
 
   button {
@@ -49,4 +64,3 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default GlobalStyles;
-
