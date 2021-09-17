@@ -1,8 +1,13 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, Line } from "./styles";
 
 function Footer() {
-  return <Container />;
+  return (
+    <>
+      <Line />
+      <Container />
+    </>
+  );
 }
 
 export default Footer;
