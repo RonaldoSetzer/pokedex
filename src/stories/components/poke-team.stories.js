@@ -47,9 +47,13 @@ const pokemons = [
 
 const Template = (args) => <PokeTeam {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Full = Template.bind({});
+Full.args = {
   pokemons,
 };
 
+export const Incomplete = Template.bind({});
+Incomplete.args = {
+  pokemons: pokemons.slice(-2),
+};
 export const Blank = Template.bind({});
