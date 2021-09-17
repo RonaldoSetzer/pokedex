@@ -1,15 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-
-const Background = styled.div`
-  width: 1rem;
-  height: 1rem;
-  border-radius: 5px;
-  background: ${(props) => (props.selected ? "#ff0000" : "#fff000")};
-`;
+import { Pokeball } from "../../icons";
 
 function Favourite({ selected }) {
-  return <Background selected={selected} />;
+  return <Pokeball disabled={!selected} width="1.5rem" height="1.5rem" />;
 }
 
 export default Favourite;
