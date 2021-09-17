@@ -1,11 +1,11 @@
 import React from "react";
 import { List, ListItem } from "./styles";
 
-function Pagination({ pages = [] }) {
+function Pagination({ pages = [], selectedPage }) {
   return (
     <List>
       {pages.map(({ index }) => (
-        <ListItem>{index}</ListItem>
+        <ListItem selected={index === selectedPage}>{index}</ListItem>
       ))}
     </List>
   );

@@ -7,9 +7,9 @@ export default {
   component: Pagination,
 };
 
-const pages = [{ index: 1 }, { index: 2 }, { index: 3 }];
+const pages = [{ index: 1 }, { index: 2 }, { index: 3 }, { index: 4 }];
 
 const Template = (args) => <Pagination {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { pages };
+Default.args = { pages, selectedPage: 2 };
