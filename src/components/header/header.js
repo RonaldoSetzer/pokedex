@@ -1,11 +1,16 @@
 import React from "react";
-import { Container } from "./styles";
+import { Pokeball } from "../../icons";
+import { Container, Line } from "./styles";
 
 function Header() {
   return (
-    <Container>
-      <h1>Pokedex</h1>
-    </Container>
+    <>
+      <Container>
+        <Pokeball />
+        <h1>Pokedex</h1>
+      </Container>
+      <Line />
+    </>
   );
 }
 
