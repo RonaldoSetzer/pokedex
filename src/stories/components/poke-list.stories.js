@@ -9,7 +9,17 @@ export default {
 
 const pokemons = [
   {
-    id: "004",
+    id: "001",
+    name: "Squirtle",
+    imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
+  },
+  {
+    id: "002",
+    name: "Squirtle",
+    imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
+  },
+  {
+    id: "003",
     name: "Squirtle",
     imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
   },
@@ -19,27 +29,17 @@ const pokemons = [
     imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
   },
   {
-    id: "004",
+    id: "005",
     name: "Squirtle",
     imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
   },
   {
-    id: "004",
+    id: "006",
     name: "Squirtle",
     imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
   },
   {
-    id: "004",
-    name: "Squirtle",
-    imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
-  },
-  {
-    id: "004",
-    name: "Squirtle",
-    imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
-  },
-  {
-    id: "004",
+    id: "007",
     name: "Squirtle",
     imgageURL: "https://cdn2.bulbagarden.net/upload/3/39/007Squirtle.png",
   },
