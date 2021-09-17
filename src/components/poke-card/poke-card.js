@@ -3,17 +3,17 @@ import { Container, Header, Title, ImagePlaceholder } from "./styles";
 
 import { Favourite } from "../../assets/";
 
-function PokeCard({ id = "000", name = "---", imgageURL, selected }) {
-  const title = `#${id} - ${name}`;
+function PokeCard({ id, name, imgageURL, selected }) {
+  const title = id ? `#${id} - ${name}` : "";
   return (
     <Container>
       <Header>
-        <Title>{title}</Title>
         <Favourite selected={selected} />
       </Header>
       <ImagePlaceholder>
-        <img src={imgageURL} alt={`${id} - ${name}`} />
+        {id && <img src={imgageURL} alt={`${id} - ${name}`} />}
       </ImagePlaceholder>
+      <Title>{title}</Title>
     </Container>
   );
 }
