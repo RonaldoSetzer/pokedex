@@ -1,15 +1,16 @@
 import React from "react";
-import { Container, ImagePlaceholder } from "./styles";
+import { Container, ImagePlaceholder, Button } from "./styles";
 
-function PokeTeamCard({ imgageURL, id, name }) {
+function PokeTeamCard({ id, name, imgageURL }) {
+  const disable = !id;
   return (
-    <Container>
+    <Container disable={disable}>
       <ImagePlaceholder>
-        <img src={imgageURL} alt={`${id} - ${name}`} />
+        {!disable && <img src={imgageURL} alt={`${id} - ${name}`} />}
       </ImagePlaceholder>
-      <span>{name}</span>
-      {id && <button>remove</button>}
+      {!disable && <Button>remove</Button>}
     </Container>
   );
 }
+
 export default PokeTeamCard;
